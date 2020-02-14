@@ -117,6 +117,24 @@ h2 {
   width: 30px;
   height: 30px;
   margin-right: 10px;
+  -webkit-transform: scale3d(1none, 1none, 1none);
+  transform: scale3d(1none, 1none, 1none);
+  -webkit-transition: all 200ms ease;
+  transition: all 200ms ease;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+
+.social-link:hover {
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+.social-link:active {
+  -webkit-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  transform: scale(1.05);
 }
 
 .div-block {
@@ -135,8 +153,14 @@ h2 {
   background-position: 8px 50%;
   background-size: 8px;
   background-repeat: no-repeat;
+  -webkit-transition: all 200ms ease;
+  transition: all 200ms ease;
   color: grey;
   text-decoration: none;
+}
+
+.link:hover {
+  background-color: #f3f3f3;
 }
 
 @media screen and (max-width: 767px) {
@@ -168,3 +192,4 @@ h2 {
     font-size: 12px;
   }
 }
+
